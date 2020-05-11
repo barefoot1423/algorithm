@@ -24,8 +24,7 @@ public class CutTheSticks {
 
         } while (sticks.size() > 0);
 
-        int[] ints = ret.stream().mapToInt(i -> i).toArray();
-        return ints;
+        return ret.stream().mapToInt(i -> i).toArray();
     }
 
 }
