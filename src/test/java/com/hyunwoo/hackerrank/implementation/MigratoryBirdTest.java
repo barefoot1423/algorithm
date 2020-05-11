@@ -11,7 +11,7 @@ public class MigratoryBirdTest {
 
     @Test
     public void migratoryBirds() {
-        Integer[] ints = { 1, 1, 2, 2, 3 };
+        Integer[] ints = {1, 1, 2, 2, 3};
 
         List<Integer> list = Arrays.asList(ints);
 

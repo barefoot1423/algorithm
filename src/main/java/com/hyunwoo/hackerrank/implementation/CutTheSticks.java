@@ -12,13 +12,20 @@ public class CutTheSticks {
     public int[] cutTheSticks(int[] arr) {
 
         List<Integer> sticks = Arrays.stream(arr).boxed().sorted().collect(Collectors.toList());
-
         List<Integer> ret = new ArrayList<>();
 
-        List<Integer> ii = new ArrayList<>();
+        do {
+            ret.add(sticks.size());
+            if (sticks.contains(sticks.get(0))) {
+                Integer removalNumber = sticks.get(0);
+                sticks.removeAll(Arrays.asList(removalNumber));
+                sticks.replaceAll(integer -> integer - removalNumber);
+            }
 
+        } while (sticks.size() > 0);
 
-        return null;
+        int[] ints = ret.stream().mapToInt(i -> i).toArray();
+        return ints;
     }
 
 }
