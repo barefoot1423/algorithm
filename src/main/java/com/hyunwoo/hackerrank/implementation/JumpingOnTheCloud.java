@@ -2,10 +2,6 @@ package com.hyunwoo.hackerrank.implementation;
 
 //https://www.hackerrank.com/challenges/jumping-on-the-clouds/problem
 
-import java.util.Arrays;
-import java.util.List;
-import java.util.stream.Collectors;
-
 public class JumpingOnTheCloud {
 
     static int jumpingOnClouds(int[] list) {
