@@ -10,21 +10,15 @@ public class EqualizeTheArray {
 
     public int equalizeArray(int[] arr) {
 
-        Integer integer = Arrays.stream(arr)
+        int i = Math.toIntExact(Arrays.stream(arr)
             .boxed()
             .collect(Collectors.groupingBy(Function.identity(), Collectors.counting()))
             .entrySet()
             .stream()
-            .collect(Collectors.groupingBy(Map.Entry::getValue, Collectors.mapping(Map.Entry::getKey, Collectors.toList())))
-            .entrySet()
-            .stream()
-            .max(Comparator.comparing(Map.Entry::getKey))
-            .map(Map.Entry::getValue).get().get(0);
+            .max(Comparator.comparing(Map.Entry::getValue))
+            .map(Map.Entry::getKey).orElse(null));
 
-        if (integer == null) {
-            return 0;
-        } else {
-            return Math.toIntExact(Arrays.stream(arr).boxed().filter(integer1 -> integer != integer1).count());
-        }
+        return Math.toIntExact(Arrays.stream(arr).boxed().filter(integer1 -> i != integer1).count());
+
     }
 }
