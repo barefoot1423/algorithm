@@ -5,6 +5,7 @@ package com.hyunwoo.hackerrank.implementation;
 public class ManasaAndStones {
     public int[] stones(int n, int a, int b) {
 
+
         return null;
     }
 }
