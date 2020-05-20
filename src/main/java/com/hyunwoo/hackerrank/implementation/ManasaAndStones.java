@@ -5,6 +5,7 @@ package com.hyunwoo.hackerrank.implementation;
 import java.util.HashSet;
 import java.util.Set;
 
+// I think this is a good question.
 public class ManasaAndStones {
     public int[] stones(int n, int a, int b) {
 
