@@ -5,5 +5,6 @@ package com.hyunwoo.hackerrank.implementation;
 public class ModifiedKaprekarNumbers {
     public void kaprekarNumbers(int p, int q) {
 
+        System.out.println("hello world!");
     }
 }
