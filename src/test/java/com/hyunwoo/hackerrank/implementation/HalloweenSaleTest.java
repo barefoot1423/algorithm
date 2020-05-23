@@ -9,6 +9,7 @@ public class HalloweenSaleTest {
     @Test
     public void howManyGames() {
         HalloweenSale halloweenSale = new HalloweenSale();
-        assertEquals(6, halloweenSale.howManyGames(20, 3, 6, 80));
+//        assertEquals(6, halloweenSale.howManyGames(20, 3, 6, 80));
+        assertEquals(7, halloweenSale.howManyGames(20, 3, 6, 85));
     }
 }
