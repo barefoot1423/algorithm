@@ -9,6 +9,7 @@ public class ACMICPCTeam {
     public int[] acmTeam(String[] topic) {
 
         // This is not my solution, but it is worth to keep and think about how other people resolve this issue.
+        // I need to implement it again.
         int n = topic.length;
         BigInteger[] bi = new BigInteger[n];
 
