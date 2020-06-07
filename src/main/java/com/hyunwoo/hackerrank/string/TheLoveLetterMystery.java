@@ -2,8 +2,6 @@ package com.hyunwoo.hackerrank.string;
 
 // https://www.hackerrank.com/challenges/the-love-letter-mystery/problem
 
-import java.util.stream.IntStream;
-
 public class TheLoveLetterMystery {
 
     public int theLoveLetterMystery(String s) {
