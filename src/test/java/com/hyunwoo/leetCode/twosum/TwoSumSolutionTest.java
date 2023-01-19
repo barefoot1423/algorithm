@@ -1,17 +1,17 @@
 package com.hyunwoo.leetCode.twosum;
 
-import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-import java.util.Arrays;
+import static org.junit.jupiter.api.Assertions.*;
 
-import static org.junit.Assert.*;
-
-public class TwoSumSolutionTest {
+class TwoSumSolutionTest {
 
     @Test
-    public void twoSum() {
-        Assert.assertEquals(Arrays.equals(TwoSumSolution.twoSum(new int[] {2, 7, 11, 15}, 9), new int[] {0, 1}), true);
+    void twoSumHash() {
+        var twoSumSolution = new TwoSumSolution();
+        assertArrayEquals(new int[] {1, 4}, twoSumSolution.twoSumHash(new int[] {4, 1, 5, 2, 3, 4}, 4));
+        assertArrayEquals(new int[] {1, 2}, twoSumSolution.twoSumHash(new int[] {3,2,4}, 6));
+        assertArrayEquals(new int[] {0, 1} , twoSumSolution.twoSumHash(new int[] {3,3}, 6));
     }
 
 }
