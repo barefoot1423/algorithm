@@ -1,8 +1,8 @@
 package com.hyunwoo.hackerrank.implementation;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 public class SequenceEquationTest {
 
