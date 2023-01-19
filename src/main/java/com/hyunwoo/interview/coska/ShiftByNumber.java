@@ -1,6 +1,23 @@
 package com.hyunwoo.interview.coska;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 public class ShiftByNumber {
+
+    public static void main(String[] args) {
+        List<String> list = new ArrayList<>(Arrays.asList("1", "2", "3", "4", "5"));
+        shift(list, 2);
+    }
+
+    private static void shift(List<String> list, int start){
+        for (int i = 0; i < list.size(); i++) {
+            int idx = (start + i) % list.size();
+            System.out.println(idx);
+        }
+    }
+
 }
 
 //    I had a job interview today and failed because I was very nervous using Zoom sharing my screen to solve the problem. Yes, it was basically a programming test. After the interview, I spent another time to rethink and found out there's a better way to do it. So I quickly did code and got the solution in 5 mins. (I was given 10 mins at the interview) Gee... I hate pressure at the interviews.
