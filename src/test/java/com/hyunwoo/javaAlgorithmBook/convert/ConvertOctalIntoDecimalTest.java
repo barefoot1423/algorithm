@@ -12,6 +12,7 @@ class ConvertOctalIntoDecimalTest {
 
         assertEquals(15, solution.convertToDecimal("17"));
         assertEquals(30101, solution.convertToDecimal("72625"));
+        assertEquals(156, solution.convertToDecimal("234"));
     }
 
 }
