@@ -8,6 +8,12 @@ class FindTheIndexTest {
 
     @Test
     void strStr() {
+        FindTheIndex findTheIndex = new FindTheIndex();
+        assertEquals(0, findTheIndex.strStr("sadxxxxxx", "sad"));
+        assertEquals(2, findTheIndex.strStr("abcddd", "cd"));
+        assertEquals(-1, findTheIndex.strStr("leetcode", "leeto"));
+        assertEquals(2, findTheIndex.strStr("hello", "ll"));
+
     }
 
 }
