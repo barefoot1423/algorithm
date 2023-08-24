@@ -8,18 +8,23 @@ public class FindTheIndex {
         char[] haystackCharArray = haystack.toCharArray();
         char[] needleCharArray = needle.toCharArray();
         int ret = -1;
+        if (haystackCharArray.length < needleCharArray.length) {
+            return -1;
+        }
         for (int i = 0; i < haystackCharArray.length; i++) {
-            for (int j = 0; j < needleCharArray.length || i < haystackCharArray.length;) {
+            for (int j = 0; j < needleCharArray.length; ) {
                 if (haystackCharArray[i] == needleCharArray[j]) {
-                    ret = i;
-                    j++;
+                    if (ret == -1) {
+                        ret = i;
+                    }
                     i++;
-                    if (j == needleCharArray.length) {
+                    j++;
+                    if (j == needleCharArray.length - 1) {
                         return ret;
                     }
+
                 } else {
-                    j = 0;
-                    i++;
+                    ret = -1;
                     break;
                 }
             }
