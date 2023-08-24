@@ -7,7 +7,7 @@ public class FindTheIndex {
 
         char[] haystackCharArray = haystack.toCharArray();
         char[] needleCharArray = needle.toCharArray();
-        int ret = -1;
+        int retˆ = -1;
         if (haystackCharArray.length < needleCharArray.length) {
             return -1;
         }
