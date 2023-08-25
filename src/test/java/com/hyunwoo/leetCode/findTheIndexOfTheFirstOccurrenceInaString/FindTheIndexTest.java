@@ -14,7 +14,8 @@ class FindTheIndexTest {
         assertEquals(-1, findTheIndex.strStr("leetcode", "leeto"));
         assertEquals(2, findTheIndex.strStr("hello", "ll"));
         assertEquals(1, findTheIndex.strStr("mississippi", "issi"));
-        assertEquals(-1, findTheIndex.strStr("mississippi", "issip"));
+        assertEquals(4, findTheIndex.strStr("mississippi", "issip"));
+        assertEquals(-1, findTheIndex.strStr("mississippi", "issipi"));
 
     }
 

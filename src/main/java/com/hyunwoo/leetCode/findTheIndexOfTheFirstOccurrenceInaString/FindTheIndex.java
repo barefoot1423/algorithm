@@ -7,25 +7,29 @@ public class FindTheIndex {
 
         char[] haystackCharArray = haystack.toCharArray();
         char[] needleCharArray = needle.toCharArray();
-        int retˆ = -1;
+        int ret = -1;
         if (haystackCharArray.length < needleCharArray.length) {
             return -1;
         }
-        for (int i = 0; i < haystackCharArray.length; i++) {
-            for (int j = 0; j < needleCharArray.length; ) {
+
+        for (int i = 0; i < haystackCharArray.length; ) {
+            for (int j = 0; j < needleCharArray.length && i < haystackCharArray.length; j++) {
                 if (haystackCharArray[i] == needleCharArray[j]) {
                     if (ret == -1) {
                         ret = i;
                     }
                     i++;
-                    j++;
-                    if (j == needleCharArray.length - 1) {
-                        return ret;
-                    }
-
                 } else {
+                    if (ret != -1) {
+                        i = ret + 1;
+                    } else {
+                        i++;
+                    }
                     ret = -1;
                     break;
+                }
+                if (j == needleCharArray.length - 1) {
+                    return ret;
                 }
             }
         }
