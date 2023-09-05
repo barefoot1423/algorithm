@@ -6,6 +6,7 @@ public class SearchInsertPosition {
         // implement quick sort O(nlogn)
         // find a position
         // return the positions
+
         return 0;
     }
 }
