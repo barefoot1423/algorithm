@@ -11,6 +11,7 @@ class SqrtTest {
         Sqrt sqrt = new Sqrt();
         assertEquals(2, sqrt.mySqrt(4));
         assertEquals(2, sqrt.mySqrt(8));
+        assertEquals(46340, sqrt.mySqrt(2147483647));
     }
 
 }
