@@ -1,4 +1,4 @@
-package com.hyunwoo.leetCode.RemoveDuplicatesFromSortedArray;
+package com.hyunwoo.leetCode.removeDuplicatesFromSortedArray;
 
 import org.junit.jupiter.api.Test;
 

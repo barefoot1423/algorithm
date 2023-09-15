@@ -1,5 +1,5 @@
 //https://leetcode.com/problems/remove-duplicates-from-sorted-array/
-package com.hyunwoo.leetCode.RemoveDuplicatesFromSortedArray;
+package com.hyunwoo.leetCode.removeDuplicatesFromSortedArray;
 
 import java.util.HashSet;
 import java.util.Set;
