@@ -1,4 +1,4 @@
-package com.hyunwoo.leetCode.mergeTwoSortedlist;
+package com.hyunwoo.leetCode.removeDuplicatesFromSortedlist;
 
 class ListNode {
 
