@@ -2,8 +2,13 @@ package com.hyunwoo.javaAlgorithmBook.fibonacci;
 
 public class Fibonacci {
 
+    private static long[] fibonacciCache;
+
     public static void main(String[] args) {
-        int n = 6;
+        int n = 50;
+
+        fibonacciCache = new long[n + 1];
+
         System.out.println(fibonacci(n));
     }
 
@@ -13,7 +18,15 @@ public class Fibonacci {
             return n;
         }
 
-        return fibonacci(n - 1) + fibonacci(n - 2);
+        if (fibonacciCache[n] != 0) {
+            return fibonacciCache[n];
+        }
+
+        long nThFibonacci = fibonacci(n - 1) + fibonacci(n - 2);
+
+        fibonacciCache[n] = nThFibonacci;
+
+        return nThFibonacci;
     }
 
 }
