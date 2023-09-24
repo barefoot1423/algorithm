@@ -10,6 +10,7 @@ public class Fibonacci {
         fibonacciCache = new long[n + 1];
 
         System.out.println(fibonacci(n));
+
     }
 
     private static long fibonacci(int n) {
