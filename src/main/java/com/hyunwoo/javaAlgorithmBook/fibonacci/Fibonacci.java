@@ -23,7 +23,6 @@ public class Fibonacci {
         }
 
         long nThFibonacci = fibonacci(n - 1) + fibonacci(n - 2);
-
         fibonacciCache[n] = nThFibonacci;
 
         return nThFibonacci;
