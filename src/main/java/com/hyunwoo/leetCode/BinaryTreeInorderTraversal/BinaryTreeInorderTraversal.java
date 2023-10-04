@@ -5,15 +5,25 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class BinaryTreeInorderTraversal {
+
+    private List<Integer> ret = new ArrayList<>();
+
     public List<Integer> inorderTraversal(TreeNode root) {
 
-        List<Integer> ret = new ArrayList<>();
+        inorder(root);
 
-        return null;
+        return ret;
     }
 
     private void inorder(TreeNode root) {
 
+        if (root == null ) {
+            return;
+        }
+
+        inorder(root.left);
+        ret.add(root.val);
+        inorder(root.right);
     }
 
 }
