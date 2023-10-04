@@ -16,4 +16,25 @@ public class LinkedListNode<V> {
         return Optional.ofNullable(next);
     }
 
+    public V getValue() {
+        return value;
+    }
+
+    public LinkedListNode setValue(V value) {
+        this.value = value;
+        return this;
+    }
+
+    public LinkedListNode setNext(LinkedListNode<V> next) {
+        this.next = next;
+        return this;
+    }
+
+    @Override
+    public String toString() {
+        return "LinkedListNode{" +
+            "value=" + value +
+            '}';
+    }
+
 }
