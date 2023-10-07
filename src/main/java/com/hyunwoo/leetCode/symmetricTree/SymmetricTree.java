@@ -13,13 +13,12 @@ public class SymmetricTree {
         inorder(root);
 
         int mid = inorderList.size() / 2;
-        int i = mid;
+        int i = mid -1;
         int j = mid + 1;
-        for (; i <= 0; ) {
-            for (; j <= inorderList.size(); ) {
-                if (inorderList.get(i) != inorderList.get(j)) {
-                    return false;
-                }
+        while (i > 0) {
+
+            if (inorderList.get(i) != inorderList.get(j)) {
+                return false;
             }
             i--;
             j++;
@@ -30,7 +29,7 @@ public class SymmetricTree {
 
     private void inorder(TreeNode root) {
 
-        if (root == null ) {
+        if (root == null) {
             return;
         }
 
