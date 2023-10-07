@@ -26,7 +26,6 @@ public class SymmetricTree {
         }
 
         return true;
-
     }
 
     private void inorder(TreeNode root) {
