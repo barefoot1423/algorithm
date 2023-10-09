@@ -16,6 +16,7 @@ public class SymmetricTree {
         int i = mid -1;
         int j = mid + 1;
         while (i > 0) {
+
             if (inorderList.get(i) != inorderList.get(j)) {
                 return false;
             }
