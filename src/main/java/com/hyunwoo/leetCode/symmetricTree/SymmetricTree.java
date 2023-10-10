@@ -10,6 +10,9 @@ public class SymmetricTree {
 
     public boolean isSymmetric(TreeNode root) {
 
+
+        // I need to understand DFS to solve this problem.
+
         inorder(root);
 
         int mid = inorderList.size() / 2;
