@@ -14,10 +14,10 @@ public class ListExample {
 
         ArrayList<Integer> numericList = new ArrayList<>();
 
-        for(int i = 0; i < 100_000_000; i++) {
-            Integer e = new Integer(randomizer.nextInt(Integer.MAX_VALUE));
+        for (int i = 0; i < 157_700_000; i++) {
+            Integer e = Integer.valueOf(randomizer.nextInt(Integer.MAX_VALUE));
             numericList.add(e);
-            System.out.println(e);
+//            System.out.println(e);
         }
 
         LocalTime endTime = LocalTime.now();
