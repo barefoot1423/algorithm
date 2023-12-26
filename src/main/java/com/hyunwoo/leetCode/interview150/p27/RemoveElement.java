@@ -7,10 +7,14 @@ public class RemoveElement {
 
         int ret = 0;
 
-        nums = Arrays.stream(nums).filter(n -> n != val).toArray();
-        Arrays.stream(nums).forEach(s -> System.out.println(s));
-        ret = (int) Arrays.stream(nums).count();
-        System.out.println(ret);
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] == val) {
+            } else {
+                nums[ret] = nums[i];
+                ret++;
+            }
+        }
+
         return ret;
     }
 }
