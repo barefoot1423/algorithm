@@ -9,7 +9,7 @@ public class RomanToInteger {
         int ret = 0;
         s.chars().forEach(a -> {
             if (a == 'V') {
-//                ret += 1;
+                ret += 1;
             }
         });
 
