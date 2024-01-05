@@ -13,6 +13,9 @@ class IsomorphicStringsTest {
         assertEquals(true, isomorphicStrings.isIsomorphic("egg", "add"));
         assertEquals(false, isomorphicStrings.isIsomorphic("foo", "bar"));
         assertEquals(true, isomorphicStrings.isIsomorphic("paper", "title"));
+        assertEquals(false, isomorphicStrings.isIsomorphic("bbbaaaba", "aaabbbba"));
+        assertEquals(false, isomorphicStrings.isIsomorphic("abbaa", "cddcd"));
+        assertEquals(false, isomorphicStrings.isIsomorphic("abcdefghijklmnopqrstuvwxyzva", "abcdefghijklmnopqrstuvwxyzck"));
     }
 
 }
