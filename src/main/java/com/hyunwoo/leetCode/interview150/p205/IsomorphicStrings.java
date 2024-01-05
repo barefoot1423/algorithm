@@ -27,8 +27,6 @@ public class IsomorphicStrings {
             }
         }
 
-        System.out.println(sb);
-
         return sb.toString();
     }
 
