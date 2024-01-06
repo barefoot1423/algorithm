@@ -11,8 +11,8 @@ class WordPatternTest {
         WordPattern wordPattern = new WordPattern();
 
         assertEquals(true, wordPattern.wordPattern("abba", "dog cat cat dog"));
-        assertEquals(true, wordPattern.wordPattern("abba", "dog cat cat fish"));
-        assertEquals(true, wordPattern.wordPattern("aaaa", "dog cat cat dog"));
+        assertEquals(false, wordPattern.wordPattern("abba", "dog cat cat fish"));
+        assertEquals(false, wordPattern.wordPattern("aaaa", "dog cat cat dog"));
     }
 
 }
