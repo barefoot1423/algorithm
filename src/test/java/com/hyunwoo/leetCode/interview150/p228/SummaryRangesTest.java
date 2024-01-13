@@ -25,7 +25,7 @@ class SummaryRangesTest {
         list2.add("6");
         list2.add("8->9");
         assertEquals(list2, summaryRanges.summaryRanges(new int[] {0, 2, 3, 4, 6, 8, 9}));
-        ˚
+
         List<String> list3 = new ArrayList<>();
         assertEquals(list3, summaryRanges.summaryRanges(new int[] {}));
     }
