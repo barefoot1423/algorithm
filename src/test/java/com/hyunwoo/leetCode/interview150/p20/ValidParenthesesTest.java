@@ -1,6 +1,5 @@
 package com.hyunwoo.leetCode.interview150.p20;
 
-import com.hyunwoo.leetCode.validParentheses.ValidParentheses;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
