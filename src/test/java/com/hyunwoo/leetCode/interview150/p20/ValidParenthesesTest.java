@@ -13,6 +13,7 @@ class ValidParenthesesTest {
         assertEquals(true, validParentheses.isValid("()[]{}"));
         assertEquals(false, validParentheses.isValid("[}"));
         assertEquals(true, validParentheses.isValid("()"));
+        assertEquals(false, validParentheses.isValid("]"));
     }
 
 }
