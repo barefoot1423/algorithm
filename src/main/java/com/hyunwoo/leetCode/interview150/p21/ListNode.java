@@ -1,6 +1,6 @@
 package com.hyunwoo.leetCode.interview150.p21;
 
-public class ListNode {
+class ListNode {
 
     int val;
     ListNode next;
