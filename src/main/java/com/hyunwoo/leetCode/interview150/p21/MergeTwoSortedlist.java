@@ -1,6 +1,7 @@
 package com.hyunwoo.leetCode.interview150.p21;
 
 public class MergeTwoSortedlist {
+
     public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
 
         if (list1 == null) {
@@ -19,4 +20,5 @@ public class MergeTwoSortedlist {
             return list2;
         }
     }
+
 }
