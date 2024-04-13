@@ -15,6 +15,7 @@ public class ValidParentheses {
                 stack.add(sCharArray[i]);
             } else {
                 if (!stack.isEmpty()) {
+
                     if (sCharArray[i] == ')') {
                         if (stack.pop() != '(') {
                             return false;
