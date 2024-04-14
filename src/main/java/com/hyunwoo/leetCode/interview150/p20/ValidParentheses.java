@@ -9,6 +9,8 @@ public class ValidParentheses {
         Stack<Character> stack = new Stack<>();
 
         char[] sCharArray = s.toCharArray();
+        int[] aa = new int[20];
+
 
         for (int i = 0; i < sCharArray.length; i++) {
             if (sCharArray[i] == '(' || sCharArray[i] == '{' || sCharArray[i] == '[') {
