@@ -12,7 +12,6 @@ public class ValidParentheses {
         int[] aa = new int[20];
 
 
-
         for (int i = 0; i < sCharArray.length; i++) {
             if (sCharArray[i] == '(' || sCharArray[i] == '{' || sCharArray[i] == '[') {
                 stack.add(sCharArray[i]);
