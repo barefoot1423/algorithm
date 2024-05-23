@@ -13,7 +13,6 @@ public class ValidParentheses {
         for (int i = 0; i < sCharArray.length; i++) {
             if (sCharArray[i] == '(' || sCharArray[i] == '{' || sCharArray[i] == '[') {
                 stack.add(sCharArray[i]);
-
             } else {
                 if (!stack.isEmpty()) {
                     if (sCharArray[i] == ')') {
