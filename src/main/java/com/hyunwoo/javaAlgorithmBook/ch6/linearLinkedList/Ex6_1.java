@@ -7,8 +7,8 @@ public class Ex6_1 {
         System.out.println("(1) insert 3 nodes to the empty list");
 
         list.insertLastNode("Mon");
-        list.insertLastNode("Tue");
         list.insertLastNode("Wed");
+        list.insertLastNode("Sun");
         list.printList();
 
     }
