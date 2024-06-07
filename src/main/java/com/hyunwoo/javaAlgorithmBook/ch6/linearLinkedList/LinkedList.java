@@ -7,7 +7,7 @@ class LinkedList {
     public LinkedList() {
         head = null;
     }
-
+˚
     public void insertLastNode(String day) {
         ListNode newNode = new ListNode(day);
         if (head == null) {
@@ -32,6 +32,24 @@ class LinkedList {
             }
         }
         System.out.println(")");
+    }
+
+    public ListNode searchNode(String day) {
+        ListNode temp = head;
+        while (temp != null) {
+            if (temp.getData().equals(day)) {
+                return temp;
+            } else {
+                temp = head.link;
+            }
+        }
+        return null;
+    }
+
+    public void insertMiddleNode(ListNode pre, String day) {
+        ListNode newNode = new ListNode(day);
+        newNode.link = pre.link;
+        pre.link = newNode;
     }
 
 }

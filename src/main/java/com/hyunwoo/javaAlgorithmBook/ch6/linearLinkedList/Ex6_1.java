@@ -11,6 +11,15 @@ public class Ex6_1 {
         list.insertLastNode("Sun");
         list.printList();
 
+        System.out.println("(2) insert \"Fri\" node after \"Wed\" node ");
+        ListNode pre = list.searchNode("Wed");
+        if (pre != null) {
+            list.insertMiddleNode(pre, "Fri");
+            list.printList();
+        } else {
+            System.out.println("Can't find the day in the list");
+        }
+
     }
 
 }
