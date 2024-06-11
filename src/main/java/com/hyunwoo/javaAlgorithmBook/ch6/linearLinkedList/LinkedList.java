@@ -53,4 +53,17 @@ class LinkedList {
         pre.link = newNode;
     }
 
+    public void deleteLastNode() {
+        if (head != null) {
+            ListNode pre, temp;
+            pre = head;
+            temp = head.link;
+            while (temp.link != null) {
+                pre = temp;
+                temp = temp.link;
+            }
+            pre.link = null;
+        }
+    }
+
 }

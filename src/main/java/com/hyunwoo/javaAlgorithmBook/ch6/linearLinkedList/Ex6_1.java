@@ -20,6 +20,10 @@ public class Ex6_1 {
             System.out.println("Can't find the day in the list");
         }
 
+        System.out.println("(3) delete the last node");
+        list.deleteLastNode();
+        list.printList();
+
     }
 
 }
