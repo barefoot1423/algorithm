@@ -31,6 +31,7 @@ class LinkedList {
                 System.out.printf(", ");
             }
         }
+
         System.out.println(")");
     }
 
