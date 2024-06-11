@@ -7,7 +7,7 @@ class LinkedList {
     public LinkedList() {
         head = null;
     }
-˚
+
     public void insertLastNode(String day) {
         ListNode newNode = new ListNode(day);
         if (head == null) {
