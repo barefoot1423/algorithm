@@ -8,18 +8,13 @@ public class SingleNumber {
 
     public int singleNumber(int[] nums) {
 
-        Map<Integer, Integer> map = new HashMap<>();
-        Arrays.stream(nums).forEach(i ->
-            map.put(i, map.getOrDefault(i, 0) + 1)
-        );
+        int ret = 0;
 
-        for (int i : nums) {
-            if (map.get(i).equals(1)) {
-                return i;
-            }
+        for (int num : nums) {
+            ret ^= num;
         }
 
-        return 0;
+        return ret;
     }
 
 }
