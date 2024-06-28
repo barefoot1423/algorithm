@@ -6,8 +6,7 @@ import java.util.Map;
 
 public class SingleNumber {
 
-    public int singleNumber(int[] nums) {
-
+    public int singleNumber(int[] nums) {π
         int ret = 0;
 
         for (int num : nums) {
