@@ -15,6 +15,7 @@ public class ShiftByNumber {
         for (int i = 0; i < list.size(); i++) {
             int idx = (start + i) % list.size();
             System.out.println(idx);
+
         }
     }
 
