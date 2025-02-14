@@ -3,7 +3,7 @@ package com.hyunwoo.practice;
 public class MemberExample {
 
     public static void main(String[] args) {
-        Member original = new Member("1111", "Test", new Student("Test", 100),10);
+        Member original = new Member("1111", "Test", new Student("Test", 100, 100),10);
 
         Member cloned = original.getMember();
 
